@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Giridhar M — Python & Data Visualization Developer</title>
+<meta name="description" content="Portfolio of Giridhar M, an MSc Mathematics (Computer Applications) student and Python developer specializing in data visualization, dashboards, and numerical modeling with Pandas, NumPy, Matplotlib, and Flask.">
+
+<!-- Fonts: Space Grotesk (display), Inter (body), JetBrains Mono (data/labels) -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<!-- Font Awesome icons (free CDN) -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<link rel="stylesheet" href="style.css">
+<noscript><style>.reveal{opacity:1!important;transform:none!important;}</style></noscript>
+</head>
+<body>
+
+<!-- Coordinate-grid ambient background -->
+<div class="grid-backdrop" aria-hidden="true"></div>
+
+<!-- ================= NAVIGATION ================= -->
+<header class="navbar" id="navbar">
+  <nav class="nav-container">
+    <a href="#home" class="nav-logo" aria-label="Giridhar M — home">
+      <span class="logo-bracket">&lt;</span>GM<span class="logo-bracket">/&gt;</span>
+    </a>
+
+    <button class="nav-toggle" id="navToggle" aria-label="Open navigation menu" aria-expanded="false" aria-controls="navMenu">
+      <span></span><span></span><span></span>
+    </button>
+
+    <ul class="nav-menu" id="navMenu">
+      <li><a href="#home" class="nav-link" data-section="home">Home</a></li>
+      <li><a href="#about" class="nav-link" data-section="about">About</a></li>
+      <li><a href="#education" class="nav-link" data-section="education">Education</a></li>
+      <li><a href="#skills" class="nav-link" data-section="skills">Skills</a></li>
+      <li><a href="#experience" class="nav-link" data-section="experience">Experience</a></li>
+      <li><a href="#projects" class="nav-link" data-section="projects">Projects</a></li>
+      <li><a href="#certifications" class="nav-link" data-section="certifications">Certifications</a></li>
+      <li><a href="#contact" class="nav-link" data-section="contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+
+  <!-- ================= HERO ================= -->
+  <section id="home" class="hero">
+    <div class="hero-inner">
+      <div class="hero-text reveal">
+        <div class="hero-photo-wrap">
+          <img src="profile.jpg" alt="Portrait of Giridhar M" class="hero-photo">
+        </div>
+        <p class="eyebrow mono">▸ dataset: portfolio.init()</p>
+        <h1 class="hero-name">Giridhar M</h1>
+        <p class="hero-role">Python &amp; Data Visualization Developer</p>
+        <p class="hero-intro">
+          MSc Mathematics (Computer Applications) graduate who turns raw, web-sourced data into
+          readable dashboards and numerical models — built on Python, Pandas, NumPy, Matplotlib,
+          Flask, and PostgreSQL, sharpened through a hands-on industry internship.
+        </p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary">View My Work</a>
+          <a href="#contact" class="btn btn-secondary">Contact Me</a>
+        </div>
+        <div class="hero-links">
+          <a href="https://github.com/Giri-hatake" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile">
+            <i class="fa-brands fa-github"></i><span>github.com/Giri-hatake</span>
+          </a>
+          <a href="https://www.linkedin.com/in/giridhar-m-334925290/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile">
+            <i class="fa-brands fa-linkedin"></i><span>linkedin.com/in/giridhar-m</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="hero-visual reveal" aria-hidden="true">
+        <div class="chart-card">
+          <div class="chart-card-header">
+            <span class="dot dot-a"></span><span class="dot dot-b"></span><span class="dot dot-c"></span>
+            <span class="chart-title mono">trend.plot(df)</span>
+          </div>
+          <svg id="heroChart" viewBox="0 0 400 220" preserveAspectRatio="none">
+            <g class="chart-grid">
+              <line x1="0" y1="20" x2="400" y2="20"></line>
+              <line x1="0" y1="60" x2="400" y2="60"></line>
+              <line x1="0" y1="100" x2="400" y2="100"></line>
+              <line x1="0" y1="140" x2="400" y2="140"></line>
+              <line x1="0" y1="180" x2="400" y2="180"></line>
+            </g>
+            <path id="chartLine" class="chart-line" d="M0,170 L40,150 L80,160 L120,110 L160,120 L200,70 L240,90 L280,50 L320,60 L360,25 L400,35" fill="none"></path>
+            <path id="chartFill" class="chart-fill" d="M0,170 L40,150 L80,160 L120,110 L160,120 L200,70 L240,90 L280,50 L320,60 L360,25 L400,35 L400,220 L0,220 Z"></path>
+          </svg>
+          <div class="chart-card-footer mono">
+            <span>Δ web-sourced</span><span>automated refresh</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <a href="#about" class="scroll-cue" aria-label="Scroll to About section">
+      <span></span>
+    </a>
+  </section>
+
+  <!-- ================= ABOUT ================= -->
+  <section id="about" class="section">
+    <div class="section-inner">
+      <p class="section-eyebrow mono">▸ 01 — about</p>
+      <h2 class="section-title reveal">About Me</h2>
+      <div class="about-grid">
+        <p class="about-text reveal">
+          I completed my M.Sc. in Mathematics with a specialization in Computer Applications at
+          Bharathiar University in 2026. My background blends analytical rigor with practical
+          development — during a two-month internship at dturn IT Solutions, I built interactive
+          dashboards that pulled in live web-sourced data and turned it into insights non-technical
+          stakeholders could actually use. I'm equally comfortable modeling equations on paper as I
+          am shipping a Flask app or a Matplotlib chart. I'm now looking for a role where I can
+          apply both my data and development skills in a dynamic organization.
+        </p>
+        <div class="about-meta reveal">
+          <div class="meta-row"><i class="fa-solid fa-location-dot"></i><span>Metturdam, Salem, Tamil Nadu – 636401</span></div>
+          <div class="meta-row"><i class="fa-solid fa-envelope"></i><span>giridhar020611@gmail.com</span></div>
+          <div class="meta-row"><i class="fa-solid fa-phone"></i><span>+91 9750556944</span></div>
+          <div class="meta-row"><i class="fa-solid fa-language"></i><span>Tamil (Native) · English (Fluent)</span></div>
+          <div class="meta-row"><i class="fa-solid fa-dice"></i><span>Interests: Dance, Badminton, Chess</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= EDUCATION ================= -->
+  <section id="education" class="section section-alt">
+    <div class="section-inner">
+      <p class="section-eyebrow mono">▸ 02 — education</p>
+      <h2 class="section-title reveal">Education</h2>
+
+      <div class="edu-list">
+        <div class="edu-item reveal">
+          <div class="edu-year mono">2024 – 2026</div>
+          <div class="edu-body">
+            <h3>M.Sc. Mathematics (Computer Applications)</h3>
+            <p class="edu-org">Bharathiar University, Coimbatore</p>
+            <p class="edu-score">CGPA: 6.7 (67%)</p>
+          </div>
+        </div>
+        <div class="edu-item reveal">
+          <div class="edu-year mono">2021 – 2024</div>
+          <div class="edu-body">
+            <h3>B.Sc. Mathematics</h3>
+            <p class="edu-org">Govt Arts and Science College, Mettur</p>
+            <p class="edu-score">CGPA: 6.9 (69.8%)</p>
+          </div>
+        </div>
+        <div class="edu-item reveal">
+          <div class="edu-year mono">2019</div>
+          <div class="edu-body">
+            <h3>HSC</h3>
+            <p class="edu-org">M.A.M Matric Higher Secondary School</p>
+            <p class="edu-score">59.8%</p>
+          </div>
+        </div>
+        <div class="edu-item reveal">
+          <div class="edu-year mono">2017</div>
+          <div class="edu-body">
+            <h3>SSLC</h3>
+            <p class="edu-org">M.A.M Matric Higher Secondary School</p>
+            <p class="edu-score">87%</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= SKILLS ================= -->
+  <section id="skills" class="section">
+    <div class="section-inner">
+      <p class="section-eyebrow mono">▸ 03 — skills</p>
+      <h2 class="section-title reveal">Technical Skills</h2>
+
+      <div class="skills-grid">
+        <div class="skill-card reveal">
+          <h3><i class="fa-solid fa-code"></i>Programming Languages</h3>
+          <div class="tag-list">
+            <span class="tag">Python</span>
+            <span class="tag">C++</span>
+            <span class="tag">Java</span>
+          </div>
+        </div>
+
+        <div class="skill-card reveal">
+          <h3><i class="fa-solid fa-chart-line"></i>Python Libraries</h3>
+          <div class="tag-list">
+            <span class="tag">Pandas</span>
+            <span class="tag">NumPy</span>
+            <span class="tag">Matplotlib</span>
+          </div>
+        </div>
+
+        <div class="skill-card reveal">
+          <h3><i class="fa-solid fa-server"></i>Web Framework</h3>
+          <div class="tag-list">
+            <span class="tag">Flask</span>
+          </div>
+        </div>
+
+        <div class="skill-card reveal">
+          <h3><i class="fa-solid fa-database"></i>Database</h3>
+          <div class="tag-list">
+            <span class="tag">PostgreSQL</span>
+          </div>
+        </div>
+
+        <div class="skill-card reveal">
+          <h3><i class="fa-brands fa-git-alt"></i>Version Control</h3>
+          <div class="tag-list">
+            <span class="tag">Git</span>
+            <span class="tag">GitHub</span>
+          </div>
+        </div>
+
+        <div class="skill-card reveal">
+          <h3><i class="fa-solid fa-toolbox"></i>Tools &amp; Software</h3>
+          <div class="tag-list">
+            <span class="tag">MS Word</span>
+            <span class="tag">MS Excel</span>
+            <span class="tag">MS PowerPoint</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= EXPERIENCE ================= -->
+  <section id="experience" class="section section-alt">
+    <div class="section-inner">
+      <p class="section-eyebrow mono">▸ 04 — experience</p>
+      <h2 class="section-title reveal">Experience &amp; Internship</h2>
+
+      <div class="timeline">
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-head">
+              <h3>Python Programming &amp; Data Visualization Intern</h3>
+              <span class="timeline-date mono">May 2025 – Jul 2025</span>
+            </div>
+            <p class="timeline-org">dturn IT Solutions Private Limited, Coimbatore, Tamil Nadu</p>
+            <ul class="timeline-list">
+              <li>Built interactive dashboards integrating web-sourced data using Python, Pandas, NumPy, and Matplotlib to visualize business trends.</li>
+              <li>Integrated external data sources via Python scripts, automating data retrieval and processing pipelines.</li>
+              <li>Designed responsive dashboard interfaces and delivered graphical insights to non-technical stakeholders.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= PROJECTS ================= -->
+  <section id="projects" class="section">
+    <div class="section-inner">
+      <p class="section-eyebrow mono">▸ 05 — projects</p>
+      <h2 class="section-title reveal">Featured Projects</h2>
+
+      <div class="projects-grid">
+        <article class="project-card reveal">
+          <div class="project-card-top mono">May – Jul 2025</div>
+          <h3>Interactive Dashboard — Web-Sourced Data</h3>
+          <p class="project-desc">
+            A Python dashboard built during my internship that pulls in live data from web sources
+            and refreshes automatically, turning raw figures into readable business-trend visuals
+            for non-technical stakeholders.
+          </p>
+          <div class="tag-list">
+            <span class="tag tag-sm">Python</span>
+            <span class="tag tag-sm">Pandas</span>
+            <span class="tag tag-sm">NumPy</span>
+            <span class="tag tag-sm">Matplotlib</span>
+          </div>
+          <ul class="project-features">
+            <li>Automated data refresh from live web sources</li>
+            <li>Responsive dashboard interface</li>
+          </ul>
+          <div class="project-links">
+            <a href="#" class="project-link" aria-disabled="true">[Add GitHub URL]</a>
+            <a href="#" class="project-link" aria-disabled="true">[Add Live Demo URL]</a>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-card-top mono">Academic · 2026</div>
+          <h3>Black–Scholes Option Pricing — Crank–Nicolson Method</h3>
+          <p class="project-desc">
+            An academic project implementing both numerical and analytical solutions for European
+            option pricing in Python, applying finite difference methods and stochastic calculus
+            to model financial derivatives.
+          </p>
+          <div class="tag-list">
+            <span class="tag tag-sm">Python</span>
+            <span class="tag tag-sm">NumPy</span>
+            <span class="tag tag-sm">Matplotlib</span>
+            <span class="tag tag-sm">Finite Difference Methods</span>
+          </div>
+          <ul class="project-features">
+            <li>Finite difference methods for numerical solving</li>
+            <li>Stochastic calculus applied to financial modeling</li>
+            <li>Data visualization of pricing results</li>
+          </ul>
+          <div class="project-links">
+            <a href="#" class="project-link" aria-disabled="true">[Add GitHub URL]</a>
+            <a href="#" class="project-link" aria-disabled="true">[Add Live Demo URL]</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= CERTIFICATIONS ================= -->
+  <section id="certifications" class="section section-alt">
+    <div class="section-inner">
+      <p class="section-eyebrow mono">▸ 06 — certifications</p>
+      <h2 class="section-title reveal">Certifications &amp; Achievements</h2>
+
+      <div class="cert-grid">
+        <a href="certificates/internship-completion-certificate.pdf" target="_blank" rel="noopener noreferrer" class="cert-card cert-card-clickable reveal">
+          <i class="fa-solid fa-award"></i>
+          <div>
+            <h3>Internship Completion Certificate</h3>
+            <p>Python Programming &amp; Data Visualization — dturn IT Solutions Pvt. Ltd.</p>
+            <span class="mono cert-date">July 2025</span>
+            <span class="cert-view-link"><i class="fa-solid fa-file-lines"></i> View certificate</span>
+          </div>
+        </a>
+        <a href="certificates/ms-office-certificate.pdf" target="_blank" rel="noopener noreferrer" class="cert-card cert-card-clickable reveal">
+          <i class="fa-solid fa-certificate"></i>
+          <div>
+            <h3>Microsoft Office Completion Certificate</h3>
+            <p>Microsoft Office Intermediate Program (Word/Excel/PowerPoint) — Microsoft Imagine Academy</p>
+            <span class="mono cert-date">Reg No: 02202103269 (2023)</span>
+            <span class="cert-view-link"><i class="fa-solid fa-file-lines"></i> View certificate</span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= CONTACT ================= -->
+  <section id="contact" class="section">
+    <div class="section-inner">
+      <p class="section-eyebrow mono">▸ 07 — contact</p>
+      <h2 class="section-title reveal">Let's Connect</h2>
+      <p class="contact-intro reveal">
+        Open to software developer, Python developer, and entry-level IT roles. Feel free to reach
+        out — I'll get back to you as soon as I can.
+      </p>
+
+      <div class="contact-grid">
+        <div class="contact-info reveal">
+          <a class="contact-item" href="mailto:giridhar020611@gmail.com">
+            <i class="fa-solid fa-envelope"></i>
+            <div><span>Email</span><p>giridhar020611@gmail.com</p></div>
+          </a>
+          <a class="contact-item" href="tel:+919750556944">
+            <i class="fa-solid fa-phone"></i>
+            <div><span>Phone</span><p>+91 9750556944</p></div>
+          </a>
+          <a class="contact-item" href="https://www.linkedin.com/in/giridhar-m-334925290/" target="_blank" rel="noopener noreferrer">
+            <i class="fa-brands fa-linkedin"></i>
+            <div><span>LinkedIn</span><p>linkedin.com/in/giridhar-m-334925290</p></div>
+          </a>
+          <a class="contact-item" href="https://github.com/Giri-hatake" target="_blank" rel="noopener noreferrer">
+            <i class="fa-brands fa-github"></i>
+            <div><span>GitHub</span><p>github.com/Giri-hatake</p></div>
+          </a>
+          <div class="contact-item contact-item-static">
+            <i class="fa-solid fa-location-dot"></i>
+            <div><span>Location</span><p>Salem, Tamil Nadu, India</p></div>
+          </div>
+        </div>
+
+        <form id="contactForm" class="contact-form reveal" novalidate
+              action="https://formspree.io/f/xnpaaele" method="POST">
+          <!-- Formspree config fields: sets the email subject line and
+               replies-to the sender's own address automatically. -->
+          <input type="hidden" name="_subject" value="New portfolio contact form message">
+
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" autocomplete="name" required>
+            <span class="form-error" id="nameError" role="alert"></span>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="_replyto" autocomplete="email" required>
+            <span class="form-error" id="emailError" role="alert"></span>
+          </div>
+
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" required>
+            <span class="form-error" id="subjectError" role="alert"></span>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+            <span class="form-error" id="messageError" role="alert"></span>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-full" id="submitBtn">Send Message</button>
+          <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ================= FOOTER ================= -->
+<footer class="footer">
+  <div class="footer-inner">
+    <p>&copy; <span id="year"></span> Giridhar M. Built with HTML, CSS &amp; JavaScript.</p>
+    <div class="footer-links">
+      <a href="https://github.com/Giri-hatake" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/giridhar-m-334925290/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+      <a href="mailto:giridhar020611@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+    </div>
+  </div>
+</footer>
+
+<button id="backToTop" class="back-to-top" aria-label="Back to top">
+  <i class="fa-solid fa-arrow-up"></i>
+</button>
+
+<script src="script.js"></script>
+</body>
+</html>
